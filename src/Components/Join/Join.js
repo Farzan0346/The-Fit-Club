@@ -17,7 +17,7 @@ const Join = () => {
           setEmail('');
       };
   return (
-    <div className="join-section">
+    <div className="join-section" id="join">
       <div className="left-j">
         <hr />
         <div>

@@ -65,7 +65,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-            <button className="btn header-join-btn">Join Now</button>
+            <button className="btn header-join-btn">
+            <Link onClick={() => setOpened(false)} to="join" smooth>
+            Join Now
+              </Link></button>
             </li>
           </ul>
         </div>
