@@ -1,0 +1,47 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    /* background-image:linear-gradient(to right, orange, grey ); */
+    padding: 23px 25px;
+}
+
+.logo{
+    width: 9.5rem;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: white;
+    margin-right: 2rem;
+    font-size: 17px;
+}
+.nav-links ul li:hover{
+    color: rgb(151, 90, 32);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+    }
+
+    .nav-links ul{
+        font-size: 14px;
+        gap: 1rem;
+        white-space: nowrap;
+    }
+
+    .header button{
+        position: absolute;
+        top: 1.7rem;
+        right: 3rem;
+    }
+}
+
+

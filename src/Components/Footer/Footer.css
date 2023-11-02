@@ -1,0 +1,44 @@
+.footer-section{
+   position: relative;
+}
+.footer-blur-left{
+    position: absolute;
+    bottom: 0;
+    left: 10rem;
+    height: 19rem;
+    width: 6rem;
+    filter: blur(200px);
+}
+.footer-blur-right{
+    position: absolute;
+    bottom: 0;
+    right: 10rem;
+    height: 16rem;
+    width: 6rem;
+    filter: blur(200px);
+    background: rgba(202, 26, 26, 0.813);
+}
+.footer{
+    padding: 1rem 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.social-links{
+    display: flex;
+    gap: 5rem;
+}
+.social-links>img{
+    width: 2rem;
+    height: 2rem;
+}
+.social-links>img:hover{
+    cursor: pointer;
+}
+.footer>img{
+    width: 10rem;
+    
+}

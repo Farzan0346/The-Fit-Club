@@ -1,0 +1,71 @@
+.programs-section{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 2rem;
+}
+.programs-title{
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.programs{
+    display: flex;
+    gap: 1rem;
+    margin-top: 4rem;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: gray;
+    padding: 1.5rem;
+    line-height: 1.7rem;
+    color: white;
+}
+.category>:first-child{
+    height: 2rem;
+    width: 3rem;
+    fill: white;
+}
+.category :nth-child(2){
+    font-size: 0.9rem;
+    font-weight: bold;
+
+}
+.joinnow-btn{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.joinnow-btn span{
+    width: fit-content;
+}
+.joinnow-btn>img{
+    width: 1rem;
+}
+.category:hover{
+    cursor: pointer;
+    background: linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-section{
+        margin-top: 6rem;
+    }
+    .programs-title{
+        flex-direction: column;
+        text-align: center;
+        font-size: 2.3rem;
+        gap: 1rem;
+    }
+    .programs{
+        flex-direction: column;
+        margin-top: 2.3rem;
+    }
+
+}

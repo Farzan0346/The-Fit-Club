@@ -1,0 +1,266 @@
+.hero-section{
+    padding: 0 3vw;
+    display: flex;
+    /* background-image: linear-gradient(to right, rgba(240, 116, 15, 0.856) , rgb(77, 77, 77) 40%, rgba(240, 116, 15, 1) 90%); */
+}
+
+.hero-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: 1;
+    gap: 2.5rem;
+}
+
+.best-ad{
+    margin-top: 5rem;
+    background-color: rgb(85, 85, 85);
+    border-radius: 4rem;
+    padding: 15px 13px;
+    position: relative;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.best-ad p{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    z-index: 2;
+}
+
+.best-ad>:first-child{
+    position: absolute;
+    background-color: rgb(232, 132, 0);
+    height: 80%;
+    width: 5rem;
+    border-radius: 4rem;
+    left: 5px;
+    z-index: 1;
+}
+
+.hero-text{
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+}
+.tag-line{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 110%;
+}
+
+
+.figures{
+    display: flex;
+    gap: 1.9rem;
+}
+
+.figures>div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+.figures>div>span:nth-child(1){
+    font-size: 2rem;
+    color: white;
+}
+
+.figures>div>span:nth-child(2){
+    font-size: 1rem;
+    color: rgb(171, 171, 171);
+}
+
+.hero-buttons{
+    display: flex;
+    gap: 1rem;
+}
+
+.get-started-btn{
+    background-color: orange;
+    color: white;
+    width: 8rem;
+    border: none;
+  }
+  .learn-more-btn{
+    background-color: transparent;
+    border: 1px solid orange;
+    color: white;
+    width: 8rem;
+  }
+  
+.hero-right{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.calories{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background-color: rgb(113, 112, 112);
+    border-radius: 10px;
+    gap: 1rem;
+    width: 7rem;
+    position: absolute;
+    top: 27rem;
+}
+.calories img{
+    width: 2.5rem;
+    height: 6.5rem;
+}
+.calories-info{
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.calories-info>:nth-child(1){
+    font-size: 1rem;
+    color: rgb(167, 167, 167);
+}
+.calories-info>:nth-child(2){
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+}
+
+
+
+
+.hero-image{
+    width: 23rem;
+    position: absolute;
+    right: 6.5rem;
+    top: 5rem;
+}
+.hero-image-back{
+    position: absolute;
+    width: 15rem;
+    left: 3rem;
+    top: 1rem;
+    z-index: -1;
+}
+
+.heart-rate{
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 1.1rem;
+    gap: 0.7rem;
+    height: fit-content;
+    background-color: rgb(85, 85, 85);
+    border-radius: 7px;
+}
+.heart-rate img{
+    width: 2rem;
+}
+.heart-rate>span:nth-child(2){
+    font-size: 1.15rem;
+    color: rgb(167, 167, 167);
+    font-weight: normal;
+}
+.heart-rate>:nth-child(3){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-blur{
+    width: 22rem;
+    height: 30rem;
+}
+.left{
+    left: 0;
+}
+.right{
+    right: 0;
+}
+
+@media screen and ( max-width: 768px){
+  .hero-section{
+    flex-direction: column;
+  }
+  .hero-left{
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-text{
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .tag-line{
+    width: 80vw;
+    text-align: center;
+  }
+  .figures{
+    gap: 0.7rem;
+  }
+  .figures>div>span:nth-child(1){
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  .figures>div>span:nth-child(2){
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .calories{
+    position: relative;
+    top: 21rem;
+    height: fit-content;
+    gap: 0.7rem
+  }
+  .calories img{
+    height: 5.5rem;
+}
+.calories-info{
+    gap: 0.3rem;
+}
+.calories-info>:nth-child(1){
+    font-size: 1rem;
+    line-height: 1.1rem;
+}
+.calories-info>:nth-child(2){
+    font-size: 1.3rem;
+    line-height: 1.25rem;
+}
+  .hero-image{
+    position: relative;
+    right: 4rem;
+    top: 7rem;
+    width: 14rem;
+  }
+  .hero-image-back{
+    transform: scale(0.8);
+  }
+  .heart-rate{
+    top: 1.5rem;
+    padding: 0.8rem;
+    gap: 0.3rem;
+    }
+    .heart-rate img{
+        width: 1.5rem;
+    }
+    .heart-rate>span:nth-child(2){
+        font-size: 1rem;
+        color: rgb(167, 167, 167);
+        font-weight: normal;
+    }
+    .heart-rate>:nth-child(3){
+        color: white;
+        font-size: 1.3rem;
+    }
+
+  
+}
+
