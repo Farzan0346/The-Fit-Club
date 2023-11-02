@@ -9,7 +9,7 @@ const Testimonials = () => {
   const transition = { type: 'tween', duration: 1}
   const [testimonial, setTestimonial] = useState(0);
   return (
-    <div className="testimonials-section">
+    <div className="testimonials-section" id="testimonials">
       <div className="left-t">
         <span>TESTIMONIALS</span>
         <span className="text-stroke" style={{fontSize : '3rem'}}> WHAT THEY</span>
@@ -66,7 +66,7 @@ const Testimonials = () => {
          className="orange-outline"></motion.div>
         <motion.div
           initial={{opacity: 0, x: 100}}
-          whileInView={{opacity: 1, x: 0}}
+          whileInView={{opacity: 1, x:  0}}
           transition={transition}
          className="bg-effect"></motion.div>
       </div>

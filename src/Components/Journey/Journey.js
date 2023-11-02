@@ -7,7 +7,7 @@ import rightArrow from '../../Documents/rightArrow.png'
 const Journey = () => {
     
   return (
-    <div className="journey-section">
+    <div className="journey-section" id="plans">
     <div className="blur journey-blur-left"></div>
     <div className="blur journey-blur-right"></div>
       <div className="journey-title">

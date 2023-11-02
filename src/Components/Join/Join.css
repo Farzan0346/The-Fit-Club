@@ -59,7 +59,7 @@
     color: white;
     white-space: nowrap;
     background-color: rgb(236, 154, 1);
-    font-size: 1.2rem;
+    font-size: 0.8rem;
 }
 
 @media screen and (max-width: 768px) {

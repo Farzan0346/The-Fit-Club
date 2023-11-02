@@ -4,23 +4,31 @@
     align-items: flex-end;
     /* background-image:linear-gradient(to right, orange, grey ); */
     padding: 23px 25px;
+    position: relative;
 }
 
 .logo{
     width: 9.5rem;
 }
 
-.nav-links ul{
+.nav-links{
     list-style: none;
     display: flex;
     gap: 2rem;
     color: white;
     margin-right: 2rem;
     font-size: 17px;
+    align-items: center;
 }
-.nav-links ul li:hover{
+.nav-links li:hover{
     color: rgb(151, 90, 32);
     cursor: pointer;
+}
+.bars{
+    visibility: hidden;
+}
+.header-join-btn{
+    margin-left: 15rem;
 }
 
 @media screen and (max-width: 768px){
@@ -31,16 +39,38 @@
         position: relative;
     }
 
-    .nav-links ul{
+    .nav-links{
+        position: fixed;
+        flex-direction: column;
+        background-color: rgb(32 32 32);
+        padding: 1.5rem;
+        padding-top: 3rem;
+        border-radius: 5px;
+        z-index: 10;
+        width: 8rem;
+        top: 1rem;
+        right: 0rem;
         font-size: 14px;
         gap: 1rem;
         white-space: nowrap;
+        align-items: flex-start;
     }
 
-    .header button{
-        position: absolute;
-        top: 1.7rem;
-        right: 3rem;
+    
+    .bars{
+        visibility: visible;
+        position: fixed;
+        top: 1.5rem;
+        right: 2.7rem;
+        width: 1.8rem;
+        height: 1.3rem;
+        padding: 0.5rem;
+        background-color: rgb(37 37 37);
+        border-radius: 5px;
+        z-index: 10;
+    }
+    .header-join-btn{
+        margin-left: 0rem;
     }
 }
 

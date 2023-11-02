@@ -5,7 +5,7 @@ import { programsData } from "../Data/programsData.js";
 
 const Programs = () => {
   return (
-    <div className="programs-section">
+    <div className="programs-section" id="programs">
       <div className="programs-title">
         <span className="text-stroke">Explore our</span>
         <span>Programs</span>

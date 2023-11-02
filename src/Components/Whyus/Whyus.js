@@ -13,7 +13,7 @@ import partner3 from '../../Documents/partner3.png'
 
 const Whyus = () => {
   return (
-    <div className="whyus-section">
+    <div className="whyus-section" id="why-us">
       <div className="whyus-left">
         <img src={image1} alt="" />
         <img src={image2} alt="" />
